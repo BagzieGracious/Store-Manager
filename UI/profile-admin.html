@@ -1,0 +1,166 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="App for managing store activities online">
+        <meta name="author" content="Bagenda Deogracious">
+
+        <title>Store Manager</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+        <link rel="icon" type="image/ico" href="assets/images/logo.png" />
+    </head>
+    <body>
+        <header class="dash">
+            <div class="logo-section">
+                <img src="assets/images/logo.png" />
+                <h1>Store Manager</h1>
+                <img src="assets/images/social/t.jpg" class="switch" onclick="sidemenu()" />
+            </div>
+            <div class="profile-section">
+                <p>Bagzie Gracious</p>
+                <ul>
+                    <li><img src="assets/images/profile/ava.jpg" /></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-section">
+            <aside id="side-menu">
+                <p class="nav-header">Navigation</p>
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/md-home.svg" class="left" /> 
+                            <span>Dashboard</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="admin.html">Home</a></li>
+                            <li><a href="sales.html">Sales</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/ios-person.svg" class="left" /> 
+                            <span>Users</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li  class="active"><a href="users.html">Users</a></li>
+                            <li><a href="adduser.html">Add User</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/ios-cart.svg" class="left" /> 
+                            <span>Products</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="products-admin.html">All Products</a></li>
+                            <li><a href="addproducts.html">Add Products</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/images/social/md-power.svg" class="left" /> 
+                            <span>Logout</span>
+                            <img src="assets/images/social/ios-log-out.svg" class="right" />
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="content">
+                <div class="main-info">
+                    <div class="top-section">
+                        <h3>User Profile</h3>
+                        <ul>
+                            <li>Dashboard</li>
+                            <li>/</li>
+                            <li><a href="#">Profile</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="down-section">
+                        <div class="usr-section">
+                            <div class="usr-info">
+                                <img src="assets/images/profile/ava.jpg" />
+                                <div class="inf">
+                                    <h3>Bagzie Gracious</h3>
+                                    <p>Store Attendant</p>
+                                    <p>bagendadeogracious@gmail.com</p>
+                                    <p>0780484501</p>
+                                </div>
+                            </div>
+                            
+                            <div class="sales-part">
+                                <h2>User Sales</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="lft">Product</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th class="rgt">Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>LG G3</td>
+                                            <td class="ctr">2</td>
+                                            <td class="ctr">UGX 1,300,000</td>
+                                            <td class="rgt">00:10, 5-Dec-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Iphone</td>
+                                            <td class="ctr">1</td>
+                                            <td class="ctr">UGX 2,000,000</td>
+                                            <td class="rgt">01:30, 2-Nov-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sony Ericson</td>
+                                            <td class="ctr">3</td>
+                                            <td class="ctr">UGX 4,000,000</td>
+                                            <td class="rgt">09:00, 21-Oct-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motorola</td>
+                                            <td class="ctr">2</td>
+                                            <td class="ctr">UGX 3,000,000</td>
+                                            <td class="rgt">14:30, 13-Sep-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nokia</td>
+                                            <td class="ctr">6</td>
+                                            <td class="ctr">UGX 9,000,000</td>
+                                            <td class="rgt">20:30, 7-Sep-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nokia</td>
+                                            <td class="ctr">6</td>
+                                            <td class="ctr">UGX 9,000,000</td>
+                                            <td class="rgt">20:30, 7-Sep-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nokia</td>
+                                            <td class="ctr">6</td>
+                                            <td class="ctr">UGX 9,000,000</td>
+                                            <td class="rgt">20:30, 7-Sep-2018</td>
+                                        </tr>
+                                    </tbody>
+                                </table>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
