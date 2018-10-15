@@ -1,0 +1,800 @@
+
+/*******  fonts  ******/
+@font-face{
+    font-family:'AGENCYB';
+    src:url(../fonts/Agency/AGENCYB.TTF);
+}
+
+/*******  defaults  ******/
+body{
+    margin: 0;
+    overflow: auto;
+    background: #efefef;
+    font-family: "Trebuchet MS";
+}
+h1{
+    font-family:'AGENCYB';
+}
+p{
+    font-family: "Lato", "Arial", sans-serif;
+}
+  
+/*******  login  ******/
+.login-container{
+    background-image: url("../images/background/back3.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+header{
+    overflow: auto;
+    width: 100%;
+    padding: 15px 0px;
+}
+header img{
+    float: left;
+    margin-left: 45px;
+}
+header h1{
+    float: left;
+    margin: 0px 0px 0px 15px;
+    padding: 0px 0px 0px 0px;
+    color: whitesmoke;
+}
+.login-content{
+    width: 100%;
+    overflow: hidden;
+}
+.login-info{
+    float: left;
+    width: 75%;
+}
+.login-info .info{
+    margin: 150px 0px 0px 80px;
+    color: whitesmoke;
+}
+.login-info .info div{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    padding: 15px;
+}
+.login-info .info p{
+    margin: 0px;
+    padding: 0px;
+}
+.login-form{
+    float: left;
+    width: 25%;
+}
+.login-form .login-section{
+    background: whitesmoke;
+    border-left: 3px solid #16a085;
+    border-top: 3px solid #16a085;
+    border-bottom: 3px solid #16a085;
+    margin: 15px 0px 0px 15px;
+    padding: 15px 15px 15px 15px;
+}
+.login-form .login-section h1{
+    color: #16a085;
+    margin: 5px 0px 30px 0px;
+}
+.login-form .login-section form{
+    padding-bottom: 10px;
+    border-bottom: 1px solid silver;
+}
+.login-form .login-section form .form-warp, .login-form .login-section form .form-warp label{
+    display: block;
+}
+.login-form .login-section form .form-warp{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.login-form .login-section form .form-warp select{
+    width: 97%;
+    border: 1.5px solid #16a085;
+    padding: 8px 10px;
+}
+.login-form .login-section form .form-warp label, .login-form .login-section form .form-warp span{
+    font-family: "Lato", "Arial", sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #616f77;
+}
+.login-form .login-section form .form-warp input[type="email"], .login-form .login-section form .form-warp input[type="password"]{
+    border: 1.5px solid #16a085;
+    width: 89%;
+    padding: 8px 10px;
+}
+.login-form .login-section form .form-warp input[type="checkbox"]{
+    margin-left: -20px;
+    position: absolute;
+    opacity: 0;
+}
+.login-form .login-section form .form-warp i{
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-top: -2px;
+    margin-right: 4px;
+    margin-left: 3px;
+    line-height: 1;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 3px solid #16a085;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.login-form .login-section form .form-warp button{
+    border: 1px solid #16a085;
+    background-color: #16a085;
+    color: whitesmoke;
+    padding: 8px 15px;
+    font-family: "Lato", "Arial", sans-serif;
+}
+.login-form .login-section form .form-warp a#login-button{
+    background: #16a085;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+.login-form .login-section p{
+    color: #616f77;
+    text-align: center;
+}
+.login-form .login-section .social-icons{
+    overflow: auto;
+    padding-left: 25%;
+    margin-bottom: 10px;
+}
+.login-form .login-section .social-icons img{
+    width: 30px;
+    border: 3px solid #16a085;
+    padding: 3px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.login-section p#error-message{
+    background: #dc3545;
+    text-align: left;
+    padding: 10px 10px;
+    color: white;
+    display: none;
+}
+
+/*******  dashboard  ******/
+header.dash{
+    background-color: #51445f;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    padding: 3px 0px;
+    overflow: auto;
+    z-index: 99;
+}
+header.dash .logo-section{
+    position: relative;
+    float: left;
+    padding-top: 7px;
+}
+header.dash .logo-section img{
+    margin-left: 16px;
+}
+header.dash .logo-section img.switch{
+    height: 40px;
+    width: 40px;
+    display: none;
+}
+header.dash .profile-section{
+    float: right;
+    padding-right: 15px;
+    overflow: auto;
+}
+.profile-section p{
+    float: left;
+    margin-right: 10px;
+    font-family: "Lato", "Arial", sans-serif;
+    color: whitesmoke;
+}
+.profile-section ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+.profile-section ul li{
+    display: inline;
+    cursor: pointer;
+}
+.profile-section ul li img{
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    border: 2px solid #16a085;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: whitesmoke;
+}
+.main-section{
+    margin-top: 57px;
+}
+.main-section aside{
+    background: #493d55;
+    width: 19.49%;
+    min-height: 690px;
+    position: fixed;
+    z-index: 97;
+}
+.main-section .content{
+    background: #efefef;
+    margin-left: 19.49%;
+}
+aside .nav-header{
+    text-align: left;
+    margin: 30px 20px;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+aside ul{
+    list-style: none;
+}
+aside ul.menu{
+    margin: 0px;
+    padding: 0px;
+}
+aside ul.menu li{
+    overflow: auto;
+}
+aside ul.menu li a{
+    background: #16a085;
+    width: 100%;
+    float: left;
+    text-decoration: none;
+    padding: 10px 0px;
+    color: whitesmoke;
+    overflow: auto;
+    font-family: "Lato", "Arial", sans-serif;
+}
+aside ul.menu li.active a{
+    color: #16a085;
+}
+aside ul.menu li a img.left{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 15px;
+}
+aside ul.menu li a span{
+    margin-top: 0px;
+    padding-top: 0px;
+    float: left;
+    margin-left: 10px;
+}
+aside ul.menu li a img.right{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 15px;
+}
+aside ul.menu li ul.submenu{
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.15);
+
+}
+aside ul.menu li ul.submenu li{
+    padding-left: 45px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+aside ul.menu li ul.submenu li a{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*******  home  ******/
+.content .main-info{
+    padding: 15px;
+}
+.content .main-info .top-section{
+    overflow: auto;
+}
+.content .main-info .search-section{
+    background: white;
+    padding: 15px;
+}
+.content .main-info .search-section form input{
+    padding: 10px 15px;
+    border: 1.5px solid #16a085;
+    width: 90%;
+}
+.content .main-info .search-section form button{
+    border: none;
+    color: white;
+    background: #16a085;
+    padding: 11px 15px;
+}
+.top-section h3{
+    font-family:'AGENCYB';
+    float: left;
+}
+.top-section ul{
+    float: right;
+    list-style: none;
+}
+.top-section ul li{
+    display: inline;
+    font-family: "Lato", "Arial", sans-serif;
+}
+.top-section ul li a{
+    text-decoration: none;
+    color: #16a085;
+}
+.tab-section{
+    overflow: auto;
+    margin-top: 40px;
+}
+.content .main-info .down-section .tab-section .tabs{
+    height: 112px;
+    width: 23%;
+    float: left;
+    margin: 25px 1% 25px 1%;
+    color: whitesmoke;
+}
+.tabs h1{
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+.tabs p{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+.tabs.green{
+    background-color: #16a085;
+}
+.tabs.red{
+    background-color: #e05d6f;
+}
+.tabs.blue{
+    background-color: #418bca;
+}
+.tabs.black{
+    background-color: #3f4e62;
+}
+.tabs.purple{
+    background-color: #A40778;
+}
+.tabs.orange{
+    background-color: #f0ad4e;
+}
+.tabs.brown{
+    background-color: #d9534f;
+}
+.tabs.mangeta{
+    background-color: #FF0066;
+}
+
+/*******  sales  ******/
+.lft{
+    text-align: left;
+}
+.rgt{
+    text-align: right;
+}
+.ctr{
+    text-align: center;
+}
+.sales-section{
+    background: white;
+    margin-top: 30px;
+    padding: 15px;
+}
+.sales-section table, .sales-part table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.sales-section table thead tr, .sales-part table thead tr{
+    font-family: "AGENCYB";
+}
+.sales-section table tbody tr, .sales-part table tbody tr{
+    font-family: "Lato", "Arial", sans-serif;
+}
+.sales-section table tbody tr td, .sales-part table tbody tr td{
+    border-bottom: 2px solid #16a085;
+    padding: 15px 0px;
+}
+
+.sales-section table tbody tr td.user-details, .sales-part table tbody tr td.user-details{
+    overflow: auto;
+}
+.sales-section table tbody tr td.user-details img, .sales-part table tbody tr td.user-details img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #16a085;
+    padding: 2px;
+    float: left;
+}
+.sales-section table tbody tr td.user-details p, .sales-part table tbody tr td.user-details p{
+    float: left;
+    margin-left: 15px;
+}
+.sales-section table tbody tr td button{
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    background: #16a085;
+}
+
+/*******  profile  ******/
+.usr-section{
+    margin-top: 30px;
+    padding: 15px;
+    overflow: auto;
+}
+.usr-section .usr-info{
+    float: left;
+    background-color: white;
+    width: 30%;
+    margin-left: 0%;
+    padding: 15px;
+}
+.usr-section .usr-info img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.usr-section .usr-info .inf h3{
+    font-family: "AGENCYB";
+}
+.usr-section .usr-info .inf p{
+    margin: 5px;
+}
+.usr-section .sales-part{
+    float: left;
+    background-color: white;
+    width: 60%;
+    margin-left: 2%;
+    padding: 15px;
+}
+.usr-section .sales-part h2{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: "AGENCYB";
+}
+.usr-section .sales-part button.edit{
+    padding: 10px 15px;
+    border: none;
+    background: #16a085;
+    color: white;
+    margin-right: 10px;
+}
+.usr-section .sales-part button.delete{
+    padding: 10px 15px;
+    border: none;
+    background: #FF0066;
+    color: white;
+}
+
+/*******  users  ******/
+.users-section{
+    margin-top: 30px;
+    padding: 15px;
+    overflow: auto;
+}
+.users-section .userlink{
+    text-decoration: none;
+    color: black;
+    float: left;
+    width: 22%;
+    margin: 15px 1.5% 15px 1.5%;
+}
+.users-section .userlink .thumbnail{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #16a085;
+    margin: 0px;
+    padding: 0px;
+}
+.users-section .userlink .thumbnail img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.users-section .userlink .thumbnail div h3{
+    font-family: "AGENCYB";
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+.users-section .userlink .thumbnail div p{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+/*******  add users  ******/
+.addusers-section{
+    margin-top: 30px;
+    padding: 15px;
+    overflow: auto;
+}
+.addusers-section form{
+    overflow: auto;
+}
+.addusers-section form .left-form{
+    background: white;
+    float: left;
+    width: 46.5%;
+    position: relative;
+    margin-right: 1%;
+    padding: 15px;
+}
+.left-form .form-title, .right-form .form-title{
+    overflow: auto;
+}
+.left-form .form-title p, .right-form .form-title p{
+    float: left;
+    margin-top: 3px;
+}
+.left-form .form-title hr, .right-form .form-title hr{
+    float: left;
+    width: 76%;
+    margin: 13px 0px 0px 15px;
+    border: 1.5px dashed #16a085;
+}
+.left-form .form-wrp, .right-form .form-wrp{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.left-form .form-wrp input, .right-form .form-wrp input{
+    width: 92%;
+    position: relative;
+    border: none;
+    padding: 10px 15px;
+    border-bottom: 1.5px solid #16a085;
+}
+.addusers-section form .right-form{
+    background: white;
+    float: left;
+    width: 43%;
+    position: relative;
+    margin-left: 1%;
+    padding: 15px;
+}
+.right-form .form-wrp select{
+    width: 98%;
+    padding: 10px 10px;
+    font-family: "Lato", "Arial", sans-serif;
+    border: 1.5px solid #16a085;
+}
+.right-form .form-wrp button{
+    background: #16a085;
+    border: none;
+    color: white;
+    font-family: "Lato", "Arial", sans-serif;
+    padding: 8px 10px;
+}
+
+/*******  add products  ******/
+.frm-left{
+    float: left;
+    margin: 0px 0px 0px 0px;
+    width: 44%;
+    padding: 15px;
+    background-color: white;
+    margin-right: 1%;
+}
+.frm-left .left-form .form-wrp textarea{
+    border: 2px solid #16a085;
+    width: 91%;
+    padding: 15px;
+    height: 150px;
+}
+.addusers-section form.frm-left .left-form, .addusers-section form.frm-right .right-form{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.frm-right{
+    float: left;
+    margin: 0px 0px 0px 0px;
+    width: 44%;
+    margin-left: 1%;
+    padding: 15px;
+    background-color: white;
+}
+form.frm-left .left-form .form-title hr, form.frm-right .right-form .form-title hr{
+    width: 73%;
+}
+form.frm-left .left-form .form-wrp button{
+    background: #16a085;
+    border: none;
+    color: white;
+    font-family: "Lato", "Arial", sans-serif;
+    padding: 8px 10px;
+}
+
+/*---- ipad pro ----*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .login-info{
+        width: 90%;
+    }
+    .login-info .info{
+        margin-top: 80px;
+    }
+    .login-info .info, .login-info .info div{
+        width: 93%;
+    }
+    .login-form{
+        margin-left: 64px;
+        margin-top: 60px;
+        width: 82%;
+    }
+    .login-form .login-section{
+        border: 3px solid #16a085;
+    }
+    .login-form .login-section form .form-warp input[type="email"], .login-form .login-section form .form-warp input[type="password"]{
+        width: 94%;
+    }
+    .main-section aside{
+        display: none;
+    }
+    .main-section .content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .usr-section{
+        padding: 0px;
+    }
+    .usr-section .usr-info{
+        margin-left: 0px;
+    }
+    .sales-section table tbody tr, .sales-part table tbody tr{
+        font-size: 14px;
+    }
+    .usr-section .sales-part{
+        width: 59%;
+    }
+    .content .main-info .search-section form input{
+        width: 87%;
+    }
+    header.dash .logo-section img.switch{
+        display: inline;
+    }
+    header.dash .logo-section img.switch:hover{
+        cursor: pointer;
+    }
+    .main-section aside{
+        width: 25%;
+    }
+    .users-section .userlink{
+        width: 46%;
+    }
+}
+
+
+/*---- smartphone ----*/
+@media only screen and (max-width: 768px) {
+    .login-info, header h1, .profile-section p, .main-section aside{
+        display: none;
+    }
+    .login-form{
+        width: 90%;
+        margin-left: 3.5%;
+    }
+    .login-form .login-section{
+        border: 3px solid #16a085;
+    }
+    .profile-section ul li img {
+        height: 35px;
+        width: 35px;
+        margin-top: 3px;
+    }
+    header.dash .logo-section{
+        padding-top: 5px;
+    }
+    .main-section .content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .tab-section{
+        margin-top: 0px;
+    }
+    .content .main-info .down-section .tab-section .tabs{
+        width: 100%;
+    }
+    .usr-section{
+        padding: 0px;
+    }
+    .usr-section .usr-info{
+        width: 90%;
+    }
+    .usr-section .sales-part{
+        margin-left: 0px;
+        margin-top: 25px;
+        width: 90%;
+        position: relative;
+    }
+    .sales-section table tbody tr, .sales-part table tbody tr{
+        font-size: 12px;
+    }
+    .content .main-info .search-section form input{
+        width: 75%;
+    }
+    .addusers-section form .left-form{
+        width: 89%;
+        margin-right: 0px;
+    }
+    .addusers-section{
+        padding: 0px;
+    }
+    .left-form .form-title, .right-form .form-title{
+        float: left;
+        width: 90%;
+    }
+    .left-form .form-title hr, .right-form .form-title hr{
+        width: 60%;
+    }
+    .left-form .form-wrp input, .right-form .form-wrp input{
+        width: 100%;
+    }
+    .right-form .form-wrp select{
+        width: 112%;
+    }
+    .left-form .form-wrp, .right-form .form-wrp{
+        width: 90%;
+        margin: 0px;
+        position: relative;
+        float: left;
+    }
+    .addusers-section form .right-form{
+        margin-left: 0px;
+        margin-top: 25px;
+        width: 89%;
+    }
+    .addusers-section form{
+        width: 89%;
+    }
+    .frm-left .left-form .form-wrp textarea{
+        width: 100%;
+    }
+    form.frm-left .left-form .form-title hr, form.frm-right .right-form .form-title hr{
+        display: none;
+    }
+    .frm-right{
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    header.dash .logo-section img.switch{
+        display: inline;
+    }
+    header.dash .logo-section img.switch:hover{
+        cursor: pointer;
+    }
+    .main-section aside{
+        width: 100%;
+        min-height: auto;
+        padding-bottom: 25px;
+    }
+    .main-section{
+        margin-top: 54px;
+    }
+    .users-section .userlink{
+        width: 100%;
+    }
+}
