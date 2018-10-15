@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="App for managing store activities online">
+        <meta name="author" content="Bagenda Deogracious">
+
+        <title>Store Manager</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+        <link rel="icon" type="image/ico" href="assets/images/logo.png" />
+    </head>
+    <body>
+        <header class="dash">
+            <div class="logo-section">
+                <img src="assets/images/logo.png" />
+                <h1>Store Manager</h1>
+                <img src="assets/images/social/t.jpg" class="switch" onclick="sidemenu()" />
+            </div>
+            <div class="profile-section">
+                <p>Bagzie Gracious</p>
+                <ul>
+                    <li><img src="assets/images/profile/ava.jpg" /></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-section">
+            <aside id="side-menu">
+                <p class="nav-header">Navigation</p>
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/md-home.svg" class="left" /> 
+                            <span>Dashboard</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="admin.html">Home</a></li>
+                            <li><a href="sales.html">Sales</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/ios-person.svg" class="left" /> 
+                            <span>Users</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="users.html">Users</a></li>
+                            <li><a href="adduser.html">Add User</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/ios-cart.svg" class="left" /> 
+                            <span>Products</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li class="active"><a href="products-admin.html">All Products</a></li>
+                            <li><a href="addproducts.html">Add Products</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/images/social/md-power.svg" class="left" /> 
+                            <span>Logout</span>
+                            <img src="assets/images/social/ios-log-out.svg" class="right" />
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="content">
+                <div class="main-info">
+                    <div class="top-section">
+                        <h3>View Item</h3>
+                        <ul>
+                            <li>Dashboard</li>
+                            <li>/</li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="down-section">
+                        <div class="usr-section">
+                            <div class="usr-info">
+                                <img src="assets/images/products/htc.jpg" />
+                                <div class="inf">
+                                    <h3>HTC One M7</h3>
+                                    <p>Smart Phone</p>
+                                    <p>UGX 1,500,000</p>
+                                    <p>50 pieces</p>
+                                </div>
+                            </div>
+                            
+                            <div class="sales-part">
+                                <h2>Item Description</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p><button class="edit">Edit</button> <button class="delete">Delete</button></p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
