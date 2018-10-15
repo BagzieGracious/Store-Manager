@@ -1,0 +1,161 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="App for managing store activities online">
+        <meta name="author" content="Bagenda Deogracious">
+
+        <title>Store Manager</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+        <link rel="icon" type="image/ico" href="assets/images/logo.png" />
+    </head>
+    <body>
+        <header class="dash">
+            <div class="logo-section">
+                <img src="assets/images/logo.png" />
+                <h1>Store Manager</h1>
+                <img src="assets/images/social/t.jpg" class="switch" onclick="sidemenu()" />
+            </div>
+            <div class="profile-section">
+                <p>Bagzie Gracious</p>
+                <ul>
+                    <li><img src="assets/images/profile/ava.jpg" /></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-section">
+            <aside id="side-menu">
+                <p class="nav-header">Navigation</p>
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/md-home.svg" class="left" /> 
+                            <span>Dashboard</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="attendant.html">Home</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/ios-person.svg" class="left" /> 
+                            <span>Users</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="profile-user.html">Profile</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void();">
+                            <img src="assets/images/social/ios-cart.svg" class="left" /> 
+                            <span>Products</span>
+                            <img src="assets/images/social/ios-add.svg" class="right" />
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="products-user.html">All Products</a></li>
+                            <li class="active"><a href="addcart.html">Add Cart</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/images/social/md-power.svg" class="left" /> 
+                            <span>Logout</span>
+                            <img src="assets/images/social/ios-log-out.svg" class="right" />
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="content">
+                <div class="main-info">
+                    <div class="top-section">
+                        <h3>Add Cart</h3>
+                        <ul>
+                            <li>Dashboard</li>
+                            <li>/</li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="search-section">
+                        <form>
+                            <input type="search" placeholder="search for products" />
+                            <button>search</button>
+                        </form>
+                    </div>
+
+                    <div class="down-section">
+                        <div class="sales-section">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="lft">Product</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th class="rgt">Add to Cart</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="user-details">
+                                            <img src="assets/images/products/iphone.jpg" /> 
+                                            <p>Iphone</p>
+                                        </td>
+                                        <td class="ctr">2</td>
+                                        <td class="ctr">UGX 1,300,000</td>
+                                        <td class="rgt"><button>Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-details">
+                                            <img src="assets/images/products/nokia.jpeg" /> 
+                                            <p>Nokia</p>
+                                        </td>
+                                        <td class="ctr">1</td>
+                                        <td class="ctr">UGX 2,000,000</td>
+                                        <td class="rgt"><button>Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-details">
+                                            <img src="assets/images/products/htc.jpg" /> 
+                                            <p>htc</p>
+                                        </td>
+                                        <td class="ctr">3</td>
+                                        <td class="ctr">UGX 4,000,000</td>
+                                        <td class="rgt"><button>Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-details">
+                                            <img src="assets/images/products/lg.jpg" /> 
+                                            <p>Lg G3</p>
+                                        </td>
+                                        <td class="ctr">2</td>
+                                        <td class="ctr">UGX 3,000,000</td>
+                                        <td class="rgt"><button>Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-details">
+                                            <img src="assets/images/products/hisense.png" /> 
+                                            <p>Hisense Tv</p>
+                                        </td>
+                                        <td class="ctr">6</td>
+                                        <td class="ctr">UGX 9,000,000</td>
+                                        <td class="rgt"><button>Add</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
