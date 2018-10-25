@@ -47,7 +47,7 @@ Store Manager is a web application that helps store owners manage sales and prod
 
 * [html5](https://www.w3schools.com/tags/)
 
-* [css](https://www.w3schools.com/cssref/)
+* [css3](https://www.w3schools.com/cssref/)
 
 * [javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript)
 
