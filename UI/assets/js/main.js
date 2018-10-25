@@ -7,16 +7,10 @@ function loginFunction(){
     var error = document.getElementById("error-message");
 
     if(password != "" & email != ""){
-        //password and email not empty
-        var type = document.getElementById("type");
-        var typevalue = type.options[type.selectedIndex].value;
-        
-        if(typevalue == "admin"){
+        if (password == 'admin' & email == 'admin'){
             window.location.href = "admin.html";
-        }else{
-            window.location.href = "attendant.html";
         }
-
+        window.location.href = "attendant.html";
     }else{
         if(password == "" & email == ""){
             //password and email are empty
