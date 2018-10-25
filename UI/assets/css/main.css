@@ -126,9 +126,6 @@ header h1{
     vertical-align: middle;
     background-color: #fff;
     border: 3px solid #16a085;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
 }
 .login-form .login-section form .form-warp button{
     border: 1px solid #16a085;
